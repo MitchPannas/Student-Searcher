@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; '+ 'charset=UTF-8" />
+		<style>
+			input[type=text], select {
+				width: 50%;
+				padding: 12px 20px;
+				margin: 8px 0;
+				display: inline-block;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				box-sizing: border-box;
+			}
+
+			input[type=submit] {
+				width: 60%;
+				background-color: #4CAF50;
+				color: white;
+				padding: 14px 20px;
+				margin: 8px 0;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;
+				
+			}
+			
+			div {
+				border-radius: 5px;
+				background-color: #f2f2f2;
+				padding: 20px;
+				margin: auto;
+				width: 20%;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+		<h1>Search for a degree</h1>
+		<form action="/addForm" enctype="multipart/form-data" method="post">
+		Degree:
+		<input type="text" name="degree" required/><br>
+		<input type="submit" value="Search Degree" />
+		</form>
+		
+		<form action="/start" enctype="multipart/form-data" method="post">
+			<input type="submit" value="Go Back"/>
+		</form>
+		</div>	
+	</body>
+</html>
